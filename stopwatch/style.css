@@ -1,0 +1,182 @@
+/* configurações padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+:root {
+    font-size: 62.5%;
+    --text-color: rgb(33, 33, 37);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12.6rem;
+    font-weight: 500;
+    line-height: 14.8rem;
+    width: 100%;
+
+    color: var(--text-color);
+}
+/* titulo */
+h1 {
+    font-size: 6rem;
+    text-align: center;
+    margin-bottom: -11rem;
+}
+/* estilizando BUTTONS */
+.button-set button {
+    background-color: white;
+    border: none;
+
+    border-radius: 50rem;
+}
+
+.play:hover, .pause:hover, .more-five-minutes:hover, .less-five-minutes:hover {
+    transform: scale(1.1);
+    opacity: 50%;
+}
+
+.button-kind-sounds button {
+    border: none;
+}
+
+.button-kind-sounds button img {
+    width: 10rem;
+    height: 10rem;
+}
+
+/* posicionamento */
+main {
+    max-width: 82rem;
+    border: 0.4rem black solid;
+    border-radius: 1.5rem;
+
+    display: flex;
+    margin: 7rem auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer-group {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+}
+
+.set-position-numbers {
+    margin-left: -3rem;
+    margin-right: -3rem;
+}
+
+.button-set {
+    text-align: center;
+    margin-top: -5rem;
+}
+
+
+img {
+    border: 0.4rem solid rgb(33, 33, 37);
+    border-radius: 1.5rem;
+}
+
+img:hover {
+    border: 0.4rem solid rgb(87, 193, 207);
+}
+
+img, svg{
+    cursor: pointer;
+}
+
+body.dark {
+    background-color: black;
+    color: white;
+
+    transition: background 0.2s linear;
+}
+
+.dark-container {
+    display: flex;
+    
+    margin-top: -36rem;
+    margin-right: 0.5rem;
+}
+
+label {
+    background-color: black;
+    border-radius: 4rem;
+    
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.5s linear;
+}
+
+body.dark label {
+    background-color: rgb(255, 255, 255);
+}
+
+.dark img {
+    outline: black solid 2rem;
+    border: white solid 0.4rem;
+}
+
+.dark.button-set {
+    inset-inline: black solid 2rem;
+}
+
+.dark main {
+    border: 0.4rem solid white;
+}
+
+input {
+    visibility: hidden;
+}
+
+@media (max-width: 600px) {
+    body {
+        
+        font-size: 8rem;
+       
+    }
+
+    .set-position-numbers {
+        margin-left: -1rem;
+        margin-right: -1rem;
+    }
+
+    .button-kind-sounds {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+
+        gap: 2rem;
+    }
+
+    .button-fire {
+        margin-bottom: 2rem;
+    }
+
+    .dark-container {
+        display: flex;
+        
+        margin-top: -70rem;
+        margin-right: 0.5rem;
+    }
+    
+   
+}
+
+@media (max-width: 420px) {
+    h1 {
+        font-size: 4rem;
+    }
+}
